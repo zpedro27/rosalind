@@ -17,7 +17,7 @@ def mortal_rabbits(n, m, k=1):
 
     """
 
-    memory = np.zeros(m).astype(np.int64)
+    memory = np.zeros(m).astype(np.int64)   # it is important to ensure the integers are 64bit, otherwise will cause overflow...
     memory[1] = 1
 
     f_n2 = 1
